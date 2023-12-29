@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." oninput="maxCharacters()"></textarea>
+        <p id="counter"></p>
+        <button type="submit" onclick="functionName()">submit</button>
+        <p id="welcome-message"></p>
+    </section>
+    <script src="./form.js"></script>
+</body>
+
+</html>
